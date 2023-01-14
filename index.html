@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>contest</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-container">
+        <h1 style="padding-left: 130px">WEATHER API</h1>
+        <p id="lat-lon" style="width: 20rem">
+          <span id="latitude" style="margin-left: 25px">Lat:</span>
+          <span id="longitude">Long:</span>
+        </p>
+        <div id="map-image">
+            <iframe src="https://maps.google.com/maps?q=13.2338175,76.3966937,&output=embed" width="360" height="270" frameborder="0" style="border:0"></iframe>
+        </div>
+        <button id="btn" onclick="getWeatherDetails()">Fetch Data</button>
+      </div>
+      <div id="weather-details">
+        <h2 style="margin: 25px; font-weight: 700; font-size: 40px">
+          weather details
+        </h2>
+        <div class="parameters">
+          <p id="location">Location:</p>
+          <p class="latlon" style="width: 20rem">
+            <span id="lat">Lat:</span>
+            <span id="long" style="margin-left: 200px; position: absolute"
+              >Long:</span
+            >
+          </p>
+          <p id="timeZone">TimeZone:</p>
+          <p id="windSpeed">Wind speed:</p>
+          <p id="pressure">Pressure:</p>
+          <p id="humidity">Humidity:</p>
+          <p id="windDirection">Wind Direction:</p>
+          <p id="uvIndex">UV index:</p>
+          <p id="feelsLike">Feels Like:</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
